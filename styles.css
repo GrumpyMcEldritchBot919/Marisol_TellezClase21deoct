@@ -1,97 +1,72 @@
-/* Base styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+body{
+    background-color: red;
+}
+.principal{
+    background-color: yellow;
+    padding: 5px;
+}
+header{
+    background-color: greenyellow;
+    padding: 5px;
+    text-align: center;
+    border: 3px;
+    border-style: solid;
+    border-color: green;
+}
+.contenido{
+    background-color: greenyellow;
+    padding: 5px;
+    border: 3px;
+    border-style: outset;
+    border-color: green;
+    margin-top: 5px;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1.5rem;
+nav{
+    background-color: aliceblue;
+    width: 30%;
+    margin: 2px;
+    padding: 5px;
+    border: 1px;
+    border-style: inset;
+}
+section{
+    background-color: aliceblue;
+    padding: 5px;
+    width: 35%;
+    margin: 2px;
+    border: 1px;
+    border-style: inset;
+}
+footer{
+    background-color: greenyellow;
+    border: 3px;
+    border-style: solid;
+    border-color: green;
+    margin-top: 5px;
     text-align: center;
+    color: blue;
 }
-
-/* Main layout split into 3 primary section boxes */
-main {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    flex: 1;
+ul{
+    list-style: none;
+    padding: 1px;
 }
-
-.section-box {
-    background: #fff;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+a{
+    text-decoration: none;
 }
-
-/* Box 1: Inner filling placeholders */
-.placeholder-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 1rem;
+.caja{
+    background-color: aliceblue;
+    padding: 3px;
+    margin: 3px;
+    border: 2px;
+    border-style: outset;
+    border-color: grey;
 }
-
-.fill-space {
-    background: #e2e8f0;
-    border: 2px dashed #cbd5e1;
-    padding: 2rem;
+img{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+h3{
     text-align: center;
-    border-radius: 6px;
-    color: #64748b;
-    font-weight: bold;
-}
-
-/* Box 2: Modern Masonry style gallery with unproportioned, varying image heights */
-.gallery-container {
-    margin-top: 1.5rem;
-}
-
-.masonry-gallery {
-    columns: 4 200px; /* 4 columns maximum, responsive wrap */
-    column-gap: 15px;
-}
-
-.gallery-item {
-    background: #f1f5f9;
-    margin-bottom: 15px;
-    break-inside: avoid;
-    border-radius: 6px;
-    overflow: hidden;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.gallery-item img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-.gallery-item p {
-    padding: 8px 12px;
-    margin: 0;
-    font-size: 0.85rem;
-    background: #fff;
-    text-align: center;
-    color: #475569;
-}
-
-/* Sticky Footer with credits */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: auto;
 }
